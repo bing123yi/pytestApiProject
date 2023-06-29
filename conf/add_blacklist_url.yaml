@@ -1,0 +1,11 @@
+
+  test_url: 'https://health-bops-test.zhonganonline.com'  # 测试环境域名
+  uat_url:  'https://health-bops-uat.zhonganonline.com'  # 预发环境域名
+  blacklistsAdd : '{}/api/black_list/api/v1/blacklists/add'  # 添加黑名单
+  riskRules : '{}/api/black_list/api/v1/risk/rules'  # 风险等级列表数据
+  blacklistsQuery : '{}/api/black_list/api/v1/blacklists/query' # 黑名单查询列表
+  blacklistStatus : '{}/api/black_list/api/v1/status/blacklists'  # 黑名单审核
+  saveGroupHolder : '{}/api/artemis/api/artemis/saveGroupHolder?id={}'  # 保存第二步（投保单位）
+  modificProductinfo : '{}/api/artemis/api/artemis/modificProductinfo'  # 保存第三步（产品选择）
+
+

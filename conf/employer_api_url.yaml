@@ -1,0 +1,27 @@
+
+  test_url: 'https://health-bops-test.zhonganonline.com'  # 测试环境域名
+  uat_url:  'https://health-bops-uat.zhonganonline.com'  # 预发环境域名
+  registerNewEmployer : '{}/api/employer/v1/policy/new'  # 雇主新契约-生成id
+#  lockApplyGroup : '{}/api/artemis/api/artemis/lockApplyGroup?id={}'  # 新契约-锁定投保单
+  findBasicPolicyInfo : '{}/api/employer/v1/policy/basic/{}' # 雇主新契约-根据id查询投保单号
+  findSalesChannel : '{}/api/employer/v1/resource/SalesChannel?parentCode=A' # 二级合作方列表数据
+  employerUpload  : '{}/api/employer/v1/attachment/upload' # 雇主新契约-投保单基本信息附件上传
+  saveEmployerPolicy : '{}/api/employer/v1/policy/basic/save'  # 保存第一步（投保单基本信息）
+  saveCustomer : '{}/api/employer/v1/policy/customer/save'  # 保存第二步（投被保险人）
+  productCreate : '{}/api/employer/v1/policy/product/create'  # 保存第三步（产品选择）
+  ProductQueryTmpl : '{}/api/employer/v1/policy/product/query/{}/tmpl'  # 雇主新契约-总单险种信息
+  findProductDetailsById: '{}/api/employer/v1/policy/product/query/details?policyId={}&wjsPlanCode=7263&policyProductId={}&wjsProductId={}'  # 新契约-总单险种资料-查询险种详情
+  modifyEmployerProduct : '{}/api/employer/v1/policy/product/save'  #  选择选中险种的对应责任条款
+  newEmployerPlan : '{}/api/employer/v1/plan/product/new'  # 雇主新契约-新建计划
+  saveEmployerPlan : '{}/api/employer/v1/plan/product/save'  # 雇主新契约-保存计划
+  employeeUpload : '{}/api/employer/v1/employee/upload'  # 新契约-上传被保人清单
+  policyConfirm : '{}/api/employer/v1/policy/confirm/{}'  # 新契约-提交
+  lockViewGroup : '{}/api/employer/v1/policy/lock'  # 新契约-共享池领取复核任务
+  noteSave : '{}/api/employer/v1/note/save'  # 新契约-保存获取noteId
+  passReviewPolicy : '{}/api/employer/v1/policy/review/pass'  # 新契约-复核通过
+  underwritingIssue : '{}/api/employer/v1/policy/underwriting/issue/{}'  # 新契约-核保通过
+  underwritingBack : '{}/api/employer/v1/policy/underwriting/back/{}'  # 新契约-核保退回
+
+  callBackUnderWritePolicy : '{}/api/artemis/api/artemis/callBackUnderWritePolicy?groupPolicyType=1&currentPage=1'  # 新契约-撤件列表查询
+  callBackSavePolicy : '{}/api/artemis/api/artemis/callBackSavePolicy?applyGroupId={}&applyGroupNo={}&dataNotes=123&cancelReason=5'  # 新契约-撤件
+

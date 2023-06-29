@@ -1,0 +1,40 @@
+
+  test_url: 'https://health-bops-test.zhonganonline.com'  # 测试环境域名
+  uat_url:  'https://health-bops-uat.zhonganonline.com'  # 预发环境域名
+  getApplyId: '{}/api/artemis/api/artemis/underWriteQueryPolicy?policyStatus=98&currentPage=1&applyGroupNo={}'  #投保单查询
+  registerNewProposal : '{}/api/artemis/api/artemis/registerNewProposal'  # 新契约-生成id
+  lockApplyGroup : '{}/api/artemis/api/artemis/lockApplyGroup?id={}'  # 新契约-锁定投保单
+  findGroupPolicyInfo : '{}/api/artemis/api/artemis/findGroupPolicyInfo?id={}' # 新契约-根据id查询投保单号
+  saveGroupPolicy : '{}/api/artemis/api/artemis/saveGroupPolicy'  # 保存第一步（投保单基本信息）
+  saveGroupHolder : '{}/api/artemis/api/artemis/saveGroupHolder?id={}'  # 保存第二步（投保单位）
+  modificProductinfo : '{}/api/artemis/api/artemis/modificProductinfo'  # 保存第三步（产品选择）
+  listAppGroupProductsByAppGroup : '{}/api/artemis/api/artemis/listAppGroupProductsByAppGroup?applyGroupId={}'  # 新契约-总单险种信息
+  findAppGroupProductById: '{}/api/artemis/api/artemis/findAppGroupProductById?appGroupProductId={}'  # 新契约-总单险种资料-查询险种详情
+  modifyGroupProduct : '{}/api/artemis/api/artemis/modifyGroupProduct'  #  选择选中险种的对应责任条款
+  queryPlanProducts : '{}/api/artemis/api/artemis/queryPlanProducts?applyGroupId={}&planId='  # 生成计划code
+  addGroupPlan : '{}/api/artemis/api/artemis/addGroupPlan'  # 新契约-新建计划
+  listAppGroupPlanByAppGroupId : '{}/api/artemis/api/artemis/listAppGroupPlanByAppGroupId?applyGroupId={}'  # 新契约-查询计划列表信息
+  savePlanHealthDeclaration : '{}/api/artemis/api/artemis/savePlanHealthDeclaration'  # 新契约-设置健康告知
+  getServices : '{}/api/artemis/api/artemis/added/value/group'  # 新契约-设置增值服务
+  addServices : '{}/api/artemis/api/artemis/plan/added/value/group/save'  # 新契约-设置增值服务
+  insuredImport : '{}/api/artemis/api/artemis/insuredImport'  # 新契约-上传被保人清单
+  createProPremiumBatch : '{}/api/artemis/api/artemis/createProPremiumBatch?appGroupId={}'  # 新契约-计算总保费
+  NameValidationList : '{}/api/artemis/api/artemis/queryPageIdNameValidationList?haAppGroupId={}&totalItem=0&pageSize=1000&currentPage=1'  # 新契约-公安接口校验不通过
+  addApplyAttachment : '{}/api/artemis/api/artemis/addApplyAttachment'  # 新契约-上传法人证件
+  validateBeforeFinish : '{}/api/artemis/api/artemis/validateBeforeFinish?id={}'  # 新契约-提交
+
+
+  lockViewGroup : '{}/api/artemis/api/artemis/lockApplyGroup?id={}'  # 新契约-复核查保单
+  queryForUnderCheck : '{}/api/artemis/api/artemis/queryForUnderCheck?applyGroupId={}'  # 新契约-复核查保单
+  dataReviewCheck : '{}/api/artemis/api/artemis/dataReviewCheck'  # 新契约-复核数据确认
+  finishDataReview : '{}/api/artemis/api/artemis/finishDataReview?applyGroupId={}'  # 新契约-复核通过
+
+  getPubTask : '{}/api/artemis/api/minos/uwdeal/getPubTask'  # 新契约-核保查询列表
+  uwdealLocked : '{}/api/artemis/api/minos/uwdeal/locked/{}'  # 新契约-领取核保任务
+  saveGroupDecision : '{}/api/artemis/api/minos/uwdecision/saveGroupDecision'  # 新契约-核保通过
+
+  underWriteQueryPolicy: '{}/api/artemis/api/artemis/underWriteQueryPolicy?policyStatus=98&currentPage=1&applyGroupNo={}'  # 新契约-投保单查询
+
+  callBackUnderWritePolicy : '{}/api/artemis/api/artemis/callBackUnderWritePolicy?groupPolicyType=1&currentPage=1'  # 新契约-撤件列表查询
+  callBackSavePolicy : '{}/api/artemis/api/artemis/callBackSavePolicy?applyGroupId={}&applyGroupNo={}&dataNotes=123&cancelReason=5'  # 新契约-撤件
+

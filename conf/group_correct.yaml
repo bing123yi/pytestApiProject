@@ -1,0 +1,25 @@
+
+  test_url: 'https://health-bops-test.zhonganonline.com'  # 测试环境域名
+  uat_url:  'https://health-bops-uat.zhonganonline.com'  # 预发环境域名
+  registerEndorsement : '{}/api/correcting/v1/endorsement/regist'  # 批改-生成批单号
+  endorsementSearch : '{}/api/correcting/v1/endorsement/detail/query'  # 批改-查询列表页
+  queryEndorsementPolicy : '{}/api/correcting/v1/endorsement/input/queryEndorsementPolicy?changeId={}'  # baseInfo
+  queryEndorsement : '{}/api/correcting/v1/endorsement/input/queryEndorsement?changeId={}'  # haCsPolicy
+  saveOrUpdateEndorsement : '{}/api/correcting/v1/endorsement/input/saveOrUpdateEndorsement' # 批改填写生效日期
+  queryPolicyBaseInfo : '{}/api/correcting/v1/endorsement/adddelInsured/queryPolicyBaseInfo?haGroupPolicyNo={}'  #
+  queryPolicyPlan : '{}/api/correcting/v1/endorsement/adddelInsured/queryPolicyPlan?haGroupPolicyId={}&endorsementNo={}'  #
+  addInsuredSave: '{}/api/correcting/v1/endorsement/addInsured/save'  # 手动新增被保人-保存
+  excelImport: '{}/api/correcting/v1/endorsement/addInsured/excelImport'  # 批改-导入被保人
+  querySecurityNotPassed : '{}/api/correcting/v1/endorsement/querySecurityNotPassed?endorsementNo={}&pageSize=1000&currentPage=1'  #  公安接口校验不通过
+  addAttachment : '{}/api/correcting/v1/endorsement/simpleItem/addAttachment'  # 上传证件不合法附件
+  complete : '{}/api/correcting/v1/endorsement/complete'  # 批改-录入提交
+  sharedPoolSearchlock : '{}/api/correcting/v1/endorsement/sharedPool/search'  #
+  lockClaimTask : '{}/api/correcting/v1/endorsement/checkpolicy/claimTask?endorsementNo={}'  #
+  saveOrUpdateEndorsementTask : '{}/api/correcting/v1/endorsement/checkpolicy/saveOrUpdateEndorsement'  #
+  getPubTask: '{}/api/artemis/api/minos/uwdeal/getPubTask'  # 新契约-核保查询列表
+  getMyTask: '{}/api/artemis/api/minos/uwdeal/getMyTask'  # 新契约-核保查询列表
+  uwdealLocked: '{}/api/artemis/api/minos/uwdeal/locked/{}'  # 新契约-领取核保任务
+  saveGroupDecision: '{}/api/artemis/api/minos/endor/decision/saveGroupDecision?haUwId={}&endorsementNo={}&appGroupId={}&decisionCode=1&remark='  # 新契约-核保通过
+  initPage : '{}/api/artemis/api/minos/endor/queryinfo/initPage?taskId={}'  # 新契约-设置增值服务
+
+

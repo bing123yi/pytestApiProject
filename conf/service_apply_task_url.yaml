@@ -1,0 +1,13 @@
+
+  test_url: 'https://health-bops-test.zhonganonline.com'  # 测试环境域名
+  uat_url:  'https://health-bops-uat.zhonganonline.com'  # 预发环境域名
+  supplierPolicyNo : '{}/api/service/v1/supplier/task/query/policyNo'  # 查询保单是否支持增值服务
+  createManual : '{}/api/service/v1/supplier/task/create/manual'  # 创建增值服务
+  saveManual : '{}/api/service/v1/supplier/task/save/manual' # 增值服务录入保存
+  uploadManual : '{}/api/service/v1/supplier/task/attachment/upload/manual'  # 服务申请附件上传
+  submitManual : '{}/api/service/v1/supplier/task/submit/manual'  # 提交
+  withPackcode : '{}/api/service/v1/supplier/query/item/withPackcode'  # 项目名称查询
+  serviceTask : '{}/api/service/v1/supplier/task/value'  # 服务审核 - 总任务列表查询
+  statusChange : '{}/api/service/v1/supplier/task/status/change'  # 服务审核 - 领取任务
+
+
